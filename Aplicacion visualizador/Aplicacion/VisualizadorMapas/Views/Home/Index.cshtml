@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="card">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-6">
+                <a type="button" href="@Url.Action("Visualizador", "Home", new { anio = 2013})" class="btn btn-primary mb-3">Eventos (heat-map) 2013</a>
+                <br />
+                <a type="button" href="@Url.Action("Visualizador", "Home", new { anio = 2014})" class="btn btn-primary mb-3">Eventos (heat-map) 2014</a>
+                <br />
+                <a type="button" href="@Url.Action("Visualizador", "Home", new { anio = 2015})" class="btn btn-primary mb-3">Eventos (heat-map) 2015</a>
+                <br />
+                <a type="button" href="@Url.Action("Visualizador", "Home", new { anio = 2016})" class="btn btn-primary mb-3">Eventos (heat-map) 2016</a>
+                <br />
+                <a type="button" href="@Url.Action("Visualizador", "Home", new { anio = 2017})" class="btn btn-primary mb-3">Eventos (heat-map) 2017</a>
+                <br />
+                <a type="button" href="@Url.Action("Todos", "Home")" class="btn btn-primary mb-3">Todos los datos (heat-map)</a>
+            </div>
+            <div class="col-6">
+                <a type="button" href="@Url.Action("Clustering", "Home", new { anio = 2013})" class="btn btn-primary mb-3">Eventos (clustering) 2013</a>
+                <br />
+                <a type="button" href="@Url.Action("Clustering", "Home", new { anio = 2014})" class="btn btn-primary mb-3">Eventos (clustering) 2014</a>
+                <br />
+                <a type="button" href="@Url.Action("Clustering", "Home", new { anio = 2015})" class="btn btn-primary mb-3">Eventos (clustering) 2015</a>
+                <br />
+                <a type="button" href="@Url.Action("Clustering", "Home", new { anio = 2016})" class="btn btn-primary mb-3">Eventos (clustering) 2016</a>
+                <br />
+                <a type="button" href="@Url.Action("Clustering", "Home", new { anio = 2017})" class="btn btn-primary mb-3">Eventos (clustering) 2017</a>
+                <br />
+                <a type="button" href="@Url.Action("ClusteringTodos", "Home")" class="btn btn-primary mb-3">Todos los datos (clustering)</a>
+            </div>
+        </div>
+    </div>
+</div>
